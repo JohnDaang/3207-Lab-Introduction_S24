@@ -1,6 +1,7 @@
 #include <time.h>
+#include <stdlib.h>
+#include "random.h"
 
 char randchar() {
-    srand(time(NULL));
     return 'A' + (rand() % ('Z' - 'A' + 1));
 }
